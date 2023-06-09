@@ -115,6 +115,7 @@ scan-frontend:
           name: Analyse frontend
           command: |
             cd frontend
+            npm install
             npm audit --audit-level=critical
 
   scan-backend:
@@ -128,6 +129,7 @@ scan-frontend:
           name: Analyse backend
           command: |
             cd backend
+            npm install
             npm audit --audit-level=critical
 
 #   deploy-infrastructure:
