@@ -104,7 +104,7 @@ jobs:
             npm install
             npm run test
             
-scan-frontend:
+  scan-frontend:
     docker:
       - image: circleci/node:13.8.0
     steps:
@@ -116,6 +116,9 @@ scan-frontend:
           command: |
             cd frontend
             npm install
+            npm audit fix --audit-level=critical --force
+            # If the "npm audit fix" command above could not fix all critical vulnerabilities, try “npm audit fix --force” again
+            npm audit fix --force
             npm audit --audit-level=critical
 
   scan-backend:
@@ -130,6 +133,9 @@ scan-frontend:
           command: |
             cd backend
             npm install
+            npm audit fix --audit-level=critical --force
+            # If the "npm audit fix" command above could not fix all critical vulnerabilities, try “npm audit fix --force” again
+            npm audit fix --force
             npm audit --audit-level=critical
 
 #   deploy-infrastructure:
