@@ -164,27 +164,28 @@ export class ViewEmployee extends Component<
     return (
       <div className={`${style['g-container']} ${style.fluid}`}>
         <SearchBar searchInput={generalSearch} />
+        <br></br>
+        <table>
+          <tbody>
+            <th>Display name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>Tags</th>
+            <th>Birthdate</th>
+            <th>Start Date</th>
+            <th>Action</th>
+          </tbody>
+          <tr>
+            <td>Modani</td>
+            <td>Ni</td>
+            <td>nimd1@fpt.com</td>
+            <td></td>
+            <td>13/04/1984</td>
+            <td>12/03/2009</td>
+            <td></td>
+          </tr>
+        </table>
       </div>
-      <table>
-        <tbody>
-          <th>Display name</th>
-          <th>Last name</th>
-          <th>Email</th>
-          <th>Tags</th>
-          <th>Birthdate</th>
-          <th>Start Date</th>
-          <th>Action</th>
-        </tbody>
-        <tr>
-          <td>Modani</td>
-          <td>Ni</td>
-          <td>nimd1@fpt.com</td>
-          <td></td>
-          <td>13/04/1984</td>
-          <td>12/03/2009</td>
-          <td></td>
-        </tr>
-      </table>
     );
   }
 }
