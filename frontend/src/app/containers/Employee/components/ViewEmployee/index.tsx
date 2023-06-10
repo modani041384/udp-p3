@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Gravatar from 'react-gravatar';
-import moment from 'moment';
 
 import 'react-datepicker/dist/react-datepicker.css';
 import { EmployeeModel, SalaryType, Gender } from '../../models/EmployeeModel';
@@ -13,7 +11,8 @@ import '../../../../style.local.css';
 import style from '../../../../style.local.css';
 import { EmployeesService } from '../../services';
 import { RouteComponentProps } from 'react-router';
-import { SearchInput, Breadcrumb, SearchBar, Button } from 'app/components';
+//import { SearchInput, Breadcrumb, SearchBar, Button } from 'app/components';
+import { SearchInput, SearchBar } from 'app/components';
 
 export namespace ViewEmployee {
   export interface Props extends RouteComponentProps<RoutePayload> {
