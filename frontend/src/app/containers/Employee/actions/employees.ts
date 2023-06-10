@@ -102,7 +102,7 @@ export namespace EmployeeActions {
         dispatch(push('/employees'));
         showSuccessNotification(text.CHANGES_SAVED);
       } catch (error) {
-        console.error(error);
+        //console.error(error);
         showErrorNotification(text.GENERIC_ERROR);
         dispatch(addEmployeeFailure(error));
       }
