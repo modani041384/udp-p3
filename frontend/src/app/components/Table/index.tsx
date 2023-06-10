@@ -178,7 +178,6 @@ export class Table extends Component<Table.Props, Table.State> {
               multiSort={true}
             />
           </div>
-
         </form>
       </div>
     );
