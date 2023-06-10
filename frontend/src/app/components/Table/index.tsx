@@ -178,7 +178,6 @@ export class Table extends Component<Table.Props, Table.State> {
             />
           </div>
 
-          <!--data -->
           <div
               className={`${style['g-main']} ${style['grid-x']} ${style['grid-margin-x']}`}
             >
@@ -186,23 +185,9 @@ export class Table extends Component<Table.Props, Table.State> {
                 className={`${style.cell} ${style['medium-4']} ${style['large-3']}`}
               >
                 <div className={style['cont-gravatar']}>
-                  <Gravatar
-                    email={this.state.companyEmail}
-                    size={150}
-                    className={style['e-avatar-empty']}
-                  />
                 </div>
-                <h5 style={this.textStyle}>tags</h5>
+                <h5 style={this.textStyle}></h5>
                 <div className={style['cont-tags']}>
-                  <ul className={style['e-tags-list']}>
-                    {this.state.tags.map((name, index) => {
-                      return (
-                        <li key={index}>
-                          <span className={style['e-tag']}>{name}</span>
-                        </li>
-                      );
-                    })}
-                  </ul>
                 </div>
               </div>
 
@@ -418,7 +403,7 @@ export class Table extends Component<Table.Props, Table.State> {
                       className={`${style.cell} ${style['small-12']} ${style['medium-6']}`}
                     >
                       <div className={style['input-cell']}>
-                        <label htmlFor='region'>State/Province</label>
+                        <label htmlFor='region'></label>
                         <div className={`${style['read-input']}`}>
                           Quan 3
                         </div>
