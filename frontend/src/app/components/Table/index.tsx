@@ -34,8 +34,7 @@ export class Table extends Component<Table.Props, Table.State> {
     this.state = {
       typingTimeout: 0,
       searchText: '',
-      showActiveEmployees: true,
-      data: [{"displayName" : "modani", "firstName": "mo", "middleName" : "da","lastName": "ni", "gender": "male","startDate":"12/03/2022","companyEmail": "nimd1@fpt.com"}]
+      showActiveEmployees: true
     };
   }
 
@@ -91,7 +90,8 @@ export class Table extends Component<Table.Props, Table.State> {
   }
 
   render() {
-    const { data, columns, loading, defaultSorted } = this.props;
+    let { data, columns, loading, defaultSorted } = this.props;
+    data = [{"displayName" : "modani", "firstName": "mo", "middleName" : "da","lastName": "ni", "gender": "male","startDate":"12/03/2022","companyEmail": "nimd1@fpt.com"}]
     return (
       <div
         className={`
