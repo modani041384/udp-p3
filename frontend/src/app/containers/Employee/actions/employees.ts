@@ -86,7 +86,7 @@ export namespace EmployeeActions {
         const response = await employeeService.getAllEmployees(filteredBy);
         dispatch(fetchEmployeesSuccess(response));
       } catch (error) {
-        console.error(error);
+        //console.error(error);
         dispatch(fetchEmployeesFailure(error));
       }
     };
